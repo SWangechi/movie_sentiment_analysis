@@ -439,11 +439,11 @@ print(f'Logistic Regression Accuracy: {accuracy_score(y_test, y_pred_log)}')
 
 """### Random Forest"""
 
-rf_model = RandomForestClassifier()
-rf_model.fit(X_train, y_train)
-y_pred_rf = rf_model.predict(X_test)
-rf_accuracy = accuracy_score(y_test, y_pred_rf)
-print(f'Random Forest Accuracy: {rf_accuracy:.4f}')
+# rf_model = RandomForestClassifier()
+# rf_model.fit(X_train, y_train)
+# y_pred_rf = rf_model.predict(X_test)
+# rf_accuracy = accuracy_score(y_test, y_pred_rf)
+# print(f'Random Forest Accuracy: {rf_accuracy:.4f}')
 
 """### Decision Tree"""
 
@@ -475,13 +475,13 @@ plt.show()
 
 """### Confusion matrix for Random Forest"""
 
-cm_rf = confusion_matrix(y_test, y_pred_rf)
-plt.figure(figsize=(6, 4))
-sns.heatmap(cm_rf, annot=True, fmt="d", cmap="Blues")
-plt.title('Random Forest Confusion Matrix')
-plt.ylabel('Actual Label')
-plt.xlabel('Predicted Label')
-plt.show()
+# cm_rf = confusion_matrix(y_test, y_pred_rf)
+# plt.figure(figsize=(6, 4))
+# sns.heatmap(cm_rf, annot=True, fmt="d", cmap="Blues")
+# plt.title('Random Forest Confusion Matrix')
+# plt.ylabel('Actual Label')
+# plt.xlabel('Predicted Label')
+# plt.show()
 
 """### Confusion matrix for Decision Tree"""
 
