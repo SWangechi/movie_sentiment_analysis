@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 # Load the trained models and TF-IDF vectorizer
 logistic_model = joblib.load('logistic_regression_model.pkl')
 nb_model = joblib.load('naive_bayes_model.pkl')
-rf_model = joblib.load('random_forest_model.pkl')
+# rf_model = joblib.load('random_forest_model.pkl')
 dt_model = joblib.load('decision_tree_model.pkl')
 vectorizer = joblib.load('tfidf_vectorizer.pkl')
 
@@ -23,13 +23,13 @@ st.write("Enter a movie review and get its sentiment classified as Positive or N
 
 # Dropdown to select the model
 model_choice = st.selectbox("Choose a model:", 
-                            ("Logistic Regression", "Naive Bayes", "Random Forest", "Decision Tree"))
+                            ("Logistic Regression", "Naive Bayes", "Decision Tree"))
 
 # Dictionary to map model names to the actual model objects
 model_dict = {
     "Logistic Regression": logistic_model,
     "Naive Bayes": nb_model,
-    "Random Forest": rf_model,
+    # "Random Forest": rf_model,
     "Decision Tree": dt_model
 }
 
